@@ -34,7 +34,7 @@ if __name__=="__main__":
             cv2.destroyWindow(str(idx))
 
             frames.append(gray)
-            labels.append(k)
+            labels.append(int(chr(k)))
 
     np_frames = np.array(frames)
     np_labels = np.array(labels)
